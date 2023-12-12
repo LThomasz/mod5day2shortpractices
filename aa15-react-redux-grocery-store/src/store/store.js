@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-
+import produceReducer from './produce';
 const rootReducer = combineReducers({
-  
+  //store list of produce in redux store
+  produce: produceReducer
 })
 
 let enhancer;
