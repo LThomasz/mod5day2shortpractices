@@ -9,6 +9,8 @@ const SingleArticle = () => {
   const article = articles.find(article => article.id == id)
   // console.log(article)
 
+  if (!article) return null;
+
   return (
     <div className='singleArticle'>
       <h1>{article.title}</h1>
