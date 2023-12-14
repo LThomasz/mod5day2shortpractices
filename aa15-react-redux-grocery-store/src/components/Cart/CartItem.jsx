@@ -17,14 +17,17 @@ function CartItem({ item }) {
         <input
           type="number"
           value={count}
+          onChange={(e) => setCount(e.target.value)}
         />
         <button
           className="cart-item-button"
+          onClick={() => setCount(count + 1)}
         >
           +
         </button>
         <button
           className="cart-item-button"
+          onClick={() => setCount(count - 1)}
         >
           -
         </button>

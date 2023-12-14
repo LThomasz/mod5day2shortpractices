@@ -14,14 +14,12 @@ export function cartReducer(state = {}, action) {
           id: action.id,
           count
         }
-
       };
       return newObj
     }
     case REMOVE_FROM_CART: {
       const newObj = { ...state }
       delete newObj[action.id]
-
       return newObj;
     }
     default:
